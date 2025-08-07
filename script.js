@@ -11,7 +11,7 @@ let passwordLength = 15
 function generate() {
     let randomPassword = ""
     
-    let possibleChars = [characters];
+    let possibleChars = [...characters];
     
     if (document.getElementById("symbols").checked) {
         possibleChars = possibleChars.concat(symbols);
@@ -29,8 +29,7 @@ function generate() {
 }
     firstPasswordEl.textContent = randomPassword
     secondPasswordEl.textContent = randomPassword
-
-} 
+}
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text)
