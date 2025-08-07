@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>GENERATE PASSWORD - BY RAIN</title>
+</head>
+
+<body>
+    <div id="generate-box">
+        <div class="main-box">
+            <h2 class="title">Generate a</br><span class="title-color"> random password </span></h2>
+            <h3 class="sub-title">Never use an insecure password again.</h3>
+            <button id="generate" onclick="generate()">Generate passwords</button>
+            <input type="checkbox" id="symbols" name="symbols" value="symbols" onclick="getRandomSymbols()">
+            <label for="symbols">ADD SYMBOLS</label>
+            <input type="checkbox" id="numbers" name="numbers" value="numbers" onclick="numbers()">
+            <label for="numbers">ADD NUMBERS</label>
+        </div>
+           <hr>
+        <div class="second-box">
+    
+            <button id="firstPassword"></button>
+            <button id="secondPassword"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
